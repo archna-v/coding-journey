@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Solution {
+    public static boolean isSubset(int[] a, int[] b)
+    {
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int num:a)
+        {
+            map.put(num,map.getOrDefault(num,0)+1);
+        }
+        for(int num2:b)
+        {
+            if(!map.containsKey(num2)||map.get(num2)==0)
+            {
+                return false;
+            }
+            map.put(num2,map.get(num2)-1);
+        }
+        return true;
+        
+    }
+}
