@@ -1,0 +1,15 @@
+class Solution {
+    int missingNum(int arr[])
+    {
+        int n;
+        n=arr.length;
+        long tot=(long)(n+1)*(n+2)/2;
+        long sum=0;
+        for(int num:arr)
+        {
+            sum=sum+num;
+        }
+        return (int)(tot-sum);
+        
+    }
+}
