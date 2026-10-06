@@ -1,0 +1,11 @@
+numbers = [2, 7, 11, 15]
+target = 9
+l=[]
+for i in numbers:
+  j=target-i
+  if(j in numbers):
+    l.append(numbers.index(i))
+    l.append(numbers.index(j))
+print(l)
+    
+    
