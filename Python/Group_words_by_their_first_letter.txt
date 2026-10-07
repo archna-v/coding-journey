@@ -1,0 +1,11 @@
+word=["apple", "ant", "banana", "ball", "cat", "car", "dog"]
+
+d={}
+for i in word:
+  c=i[0:1]
+  if(c in d.keys()):
+    d[c].append(i)
+  else:
+    d[c]=[i]
+print(d)
+    
