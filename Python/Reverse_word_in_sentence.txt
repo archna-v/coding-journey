@@ -1,0 +1,8 @@
+text = "I love Python"
+arr=text.split()
+l=[]
+for i in arr:
+  c=i[::-1]
+  l.append(c)
+print(" ".join(l))
+  

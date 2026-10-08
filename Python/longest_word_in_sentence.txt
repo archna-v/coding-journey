@@ -1,0 +1,9 @@
+word = ["apple", "banana", "kiwi", "watermelon", "mango"]
+max=0
+res=""
+for i in word:
+  c=len(i)
+  if(c>max):
+    max=c
+    res=i
+print(res)
